@@ -7,7 +7,7 @@ try:
 except ImportError:  # pragma: no cover - allure is optional in some environments
     allure = None  # type: ignore
 
-from appium.webdriver.common.mobileby import MobileBy
+from appium.webdriver.common.appiumby import AppiumBy
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
@@ -59,7 +59,7 @@ def scroll_to_text(driver, text: str):
         "new UiScrollable(new UiSelector().scrollable(true).instance(0))"
         f".scrollIntoView(new UiSelector().textContains(\"{text}\").instance(0));"
     )
-    return driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, ui_automator)
+    return driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, ui_automator)
 
 
 def scroll_to_element(driver, locator: Locator):

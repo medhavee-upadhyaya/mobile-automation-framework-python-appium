@@ -1,11 +1,13 @@
 {
   "platformName": "Android",
-  "platformVersion": "<platform-version>",
-  "deviceName": "<device-name>",
+  "platformVersion": "13.0",
+  "deviceName": "Android Emulator",
   "automationName": "UiAutomator2",
-  "appPackage": "<app-package>",
-  "appActivity": "<app-activity>",
-  "app": "<path-to-app-apk>",
-  "noReset": true,
+  "appPackage": "com.saucelabs.mydemoapp.rn",
+  "appActivity": "com.saucelabs.mydemoapp.rn.MainActivity",
+  "app": "./app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk",
+  "noReset": false,
+  "fullAcceptAlerts": false,
+  "autoGrantPermissions": true,
   "newCommandTimeout": 120
 }

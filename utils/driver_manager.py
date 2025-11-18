@@ -5,6 +5,7 @@ from typing import Any, Dict
 
 import yaml
 from appium import webdriver
+from appium.options.android import UiAutomator2Options
 
 from utils.logger import get_logger
 
@@ -36,7 +37,8 @@ def get_driver() -> webdriver.Remote:
     config = _load_config()
 
     LOGGER.info("Starting Appium session on %s", APPIUM_SERVER_URL)
-    driver = webdriver.Remote(command_executor=APPIUM_SERVER_URL, desired_capabilities=capabilities)
+    options = UiAutomator2Options().load_capabilities(capabilities)
+    driver = webdriver.Remote(APPIUM_SERVER_URL, options=options)
 
     implicit_wait = config.get("implicit_wait", 10)
     driver.implicitly_wait(implicit_wait)

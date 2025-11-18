@@ -1,5 +1,6 @@
-environment: qa
-app_type: android
+environment: local
+platform: android
 base_timeout: 30
 implicit_wait: 10
+command_timeout: 60
 log_level: INFO
