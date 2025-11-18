@@ -1,0 +1,11 @@
+{
+  "platformName": "Android",
+  "platformVersion": "<platform-version>",
+  "deviceName": "<device-name>",
+  "automationName": "UiAutomator2",
+  "appPackage": "<app-package>",
+  "appActivity": "<app-activity>",
+  "app": "<path-to-app-apk>",
+  "noReset": true,
+  "newCommandTimeout": 120
+}

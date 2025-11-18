@@ -1,0 +1,5 @@
+environment: qa
+app_type: android
+base_timeout: 30
+implicit_wait: 10
+log_level: INFO
