@@ -17,7 +17,7 @@ class TestLoginRegression:
         home_page = HomePage(driver)
 
         self.logger.info("Starting valid login flow")
-        login_page.login("valid_user@example.com", "correct_password")
+        login_page.login("standard_user", "secret_sauce")
 
         # TODO: Replace placeholder assertion with reliable verification once app identifiers exist.
         assert home_page.is_user_logged_in(), "Expected user to be logged in after valid credentials"
@@ -27,7 +27,7 @@ class TestLoginRegression:
         login_page = LoginPage(driver)
 
         self.logger.info("Attempting login with wrong password")
-        login_page.login("valid_user@example.com", "wrong_password")
+        login_page.login("standard_user", "wrong_password")
 
         # TODO: Validate specific error text once UI copy is finalized.
         assert login_page.has_validation_error(), "Expected an error when logging in with wrong password"
@@ -41,4 +41,5 @@ class TestLoginRegression:
         login_page.click(LoginPage.LOGIN_BUTTON)
 
         # TODO: Add assertions for inline validation messaging once locators are known.
-        assert login_page.has_validation_error(), "Expected validation error when submitting empty credentials"
+        assert login_page.has_validation_error(), "Expected 'Username is required' error"
+

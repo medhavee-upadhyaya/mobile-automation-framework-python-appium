@@ -13,7 +13,7 @@ LOGGER = get_logger(__name__)
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CAPABILITIES_PATH = REPO_ROOT / "config" / "capabilities.json"
 CONFIG_PATH = REPO_ROOT / "config" / "config.yaml"
-APPIUM_SERVER_URL = os.environ.get("APPIUM_SERVER_URL", "http://127.0.0.1:4723/wd/hub")
+APPIUM_SERVER_URL = os.environ.get("APPIUM_SERVER_URL", "http://127.0.0.1:4723")
 
 
 def _load_capabilities() -> Dict[str, Any]:

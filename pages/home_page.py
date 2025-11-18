@@ -1,18 +1,18 @@
 from appium.webdriver.common.appiumby import AppiumBy
-
 from pages.base_page import BasePage
 
 
 class HomePage(BasePage):
-    USER_AVATAR = (AppiumBy.ID, "com.example.sample:id/image_user_avatar")
-    LOGOUT_BUTTON = (AppiumBy.ID, "com.example.sample:id/button_logout")
+    MENU_BUTTON = (AppiumBy.ACCESSIBILITY_ID, "test-Menu")
+    LOGOUT_BUTTON = (AppiumBy.ACCESSIBILITY_ID, "test-Logout")
 
     def is_user_logged_in(self) -> bool:
-        # TODO: Replace with a reliable locator/condition from the actual app.
-        self.logger.debug("Checking if user avatar is visible as proof of login")
-        return self.is_visible(self.USER_AVATAR, timeout=10)
+        """User is logged in when the Menu button is visible."""
+        self.logger.debug("Checking if Menu button is visible as proof of login")
+        return self.is_visible(self.MENU_BUTTON, timeout=10)
 
     def logout(self) -> None:
-        # TODO: Update action chain when app navigation flow is available.
-        self.logger.info("Attempting to log out")
+        """Logout flow for SwagLabs mobile app."""
+        self.logger.info("Attempting logout")
+        self.click(self.MENU_BUTTON)
         self.click(self.LOGOUT_BUTTON)
