@@ -5,3 +5,7 @@ pyyaml>=6.0.0
 pytest>=7.4.0
 pytest-xdist>=3.5.0
 selenium>=4.19.0
+opencv-python
+numpy
+requests
+pytest-xdist

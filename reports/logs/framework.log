@@ -1,0 +1,10 @@
+2025-11-18 16:17:01,636 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-18 16:17:01,637 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-18 16:17:01,859 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-18 16:17:01,859 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-18 16:17:02,144 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-18 16:17:02,145 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-18 16:17:02,192 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-18 16:17:02,193 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-18 16:17:02,235 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-18 16:17:02,235 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723

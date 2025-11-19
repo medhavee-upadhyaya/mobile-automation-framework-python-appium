@@ -2,12 +2,15 @@
   "platformName": "Android",
   "appium:automationName": "UiAutomator2",
   "appium:deviceName": "Android Emulator",
-  "appium:platformVersion": "16",
-  "appium:app": "./app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk",
+  "appium:platformVersion": "13",
+  "appium:app": "app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk",
   "appium:appPackage": "com.swaglabsmobileapp",
   "appium:appActivity": "com.swaglabsmobileapp.MainActivity",
-  "appium:fullAcceptAlerts": false,
   "appium:autoGrantPermissions": true,
   "appium:noReset": false,
-  "appium:newCommandTimeout": 300
+  "appium:newCommandTimeout": 300,
+  "appium:uiautomator2ServerLaunchTimeout": 90000,
+  "appium:adbExecTimeout": 45000,
+  "appium:enforceXPath1": true,
+  "appium:fullReset": false
 }
