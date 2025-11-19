@@ -48,6 +48,9 @@ class CartPage(BasePage):
     def wait_until_empty(self, timeout: int = 5) -> None:
         WebDriverWait(self.driver, timeout).until(lambda d: len(self._all_item_elements()) == 0)
 
+    def get_item_names(self) -> list[str]:
+        return [(element.text or "").strip() for element in self._all_item_elements() if (element.text or "").strip()]
+
     def remove_first_item(self) -> None:
         self.click(self.REMOVE_BUTTON, description="remove cart item")
 

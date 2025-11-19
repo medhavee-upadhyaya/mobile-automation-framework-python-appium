@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "name": "Sauce Labs Backpack",
+      "price": "$29.99",
+      "description": "carry.allTheThings() with the sleek, streamlined Sly Pack"
+    },
+    {
+      "name": "Sauce Labs Bike Light",
+      "price": "$9.99",
+      "description": "A red light that puts the joy back in night riding"
+    },
+    {
+      "name": "Sauce Labs Bolt T-Shirt",
+      "price": "$15.99",
+      "description": "Run your tests in style with the Bolt Tee"
+    }
+  ],
+  "featured": {
+    "standard_user": "Sauce Labs Backpack",
+    "performance_glitch_user": "Sauce Labs Bike Light"
+  },
+  "bundles": {
+    "standard_user": [
+      "Sauce Labs Backpack",
+      "Sauce Labs Bike Light"
+    ],
+    "performance_glitch_user": [
+      "Sauce Labs Bolt T-Shirt"
+    ]
+  }
+}

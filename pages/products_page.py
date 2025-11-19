@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 from appium.webdriver.common.appiumby import AppiumBy
+from selenium.common.exceptions import NoSuchElementException
 
 from pages.base_page import BasePage
+from utils.helpers import scroll_to_text
 
 
 class ProductsPage(BasePage):
@@ -38,3 +40,21 @@ class ProductsPage(BasePage):
 
     def has_items_in_cart(self) -> bool:
         return self.is_visible(self.CART_BADGE, description="cart badge")
+
+    def get_first_product_name(self) -> str:
+        elements = self.driver.find_elements(*self.PRODUCT_TITLE)
+        if not elements:
+            return ""
+        return (elements[0].text or "").strip()
+
+    def open_product_by_name(self, product_name: str) -> None:
+        escaped = product_name.replace('"', '\\"')
+        locator = (
+            AppiumBy.ANDROID_UIAUTOMATOR,
+            f'new UiSelector().text("{escaped}")',
+        )
+        try:
+            element = self.driver.find_element(*locator)
+        except NoSuchElementException:
+            element = scroll_to_text(self.driver, product_name)
+        element.click()

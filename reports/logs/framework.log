@@ -1801,3 +1801,88 @@ NoSuchElementError: An element could not be located on the page using the given 
 2025-11-19 01:03:48,159 | INFO | AILocatorFallback | AI fallback resolved 'login error' to ('-android uiautomator', 'new UiSelector().text("LOGIN")') (score 1.00)
 2025-11-19 01:03:48,160 | INFO | LoginPage | Retrying action 'visibility check' using fallback locator ('-android uiautomator', 'new UiSelector().text("LOGIN")')
 2025-11-19 01:03:48,689 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 11:48:28,462 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 11:48:28,464 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 11:48:31,602 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 11:48:31,603 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 11:48:32,514 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 11:48:33,625 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 11:48:35,622 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 11:48:36,757 | INFO | utils.helpers | Tapping on element ('-android uiautomator', 'new UiSelector().text("Sauce Labs Backpack")')
+2025-11-19 11:48:58,323 | ERROR | ProductDetailPage | Failed to find element on locator ('accessibility id', 'test-Item title'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/medha/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-11-19 11:48:58,680 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/find_element_failure_1763581738324.png
+2025-11-19 11:49:19,254 | ERROR | ProductDetailPage | Failed to find element on locator ('accessibility id', 'test-Item'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/medha/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-11-19 11:49:19,535 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/find_element_failure_1763581759255.png
+2025-11-19 11:49:40,097 | ERROR | ProductDetailPage | Failed to find element on locator ('-android uiautomator', 'new UiSelector().resourceId("test-Item title")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/medha/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-11-19 11:49:40,360 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/find_element_failure_1763581780098.png
+2025-11-19 11:49:40,402 | ERROR | tests.conftest | Test test_api_defined_product_details failed. Capturing screenshot.
+2025-11-19 11:49:40,665 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_defined_product_details_1763581780402.png
+2025-11-19 11:49:40,913 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 11:49:40,914 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 11:49:40,915 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 11:49:43,518 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 11:49:43,518 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 11:49:44,456 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 11:49:45,559 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 11:49:47,559 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 11:49:48,723 | INFO | utils.helpers | Tapping on element ('-android uiautomator', 'new UiSelector().text("Sauce Labs Backpack")')
+2025-11-19 11:50:10,287 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 11:50:20,361 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 11:50:20,362 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 11:50:20,379 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 11:50:42,490 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-BACK TO PRODUCTS') failed for action 'click'. Attempting AI fallback.
+2025-11-19 11:50:52,952 | INFO | AILocatorFallback | AI fallback resolved 'back to products' to ('accessibility id', 'test-Menu') (score 0.68)
+2025-11-19 11:50:52,953 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Menu')
+2025-11-19 11:50:52,972 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Menu')
+2025-11-19 11:51:13,607 | WARNING | ProductsPage | Primary locator ('-android uiautomator', 'new UiSelector().text("Sauce Labs Bike Light")') failed for action 'click'. Attempting AI fallback.
+2025-11-19 11:51:23,689 | ERROR | ProductsPage | AI fallback failed for action 'click' on locator ('-android uiautomator', 'new UiSelector().text("Sauce Labs Bike Light")'): Message: Element not found using ('-android uiautomator', 'new UiSelector().text("Sauce Labs Bike Light")') and AI fallback could not resolve locator for 'product Sauce Labs Bike Light'.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+
+2025-11-19 11:51:23,868 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/click_failure_1763581883690.png
+2025-11-19 11:51:23,877 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 11:51:24,022 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763581883877.png
+2025-11-19 11:51:24,568 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 12:04:36,554 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 12:04:36,555 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 12:04:39,383 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 12:04:39,385 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 12:04:40,224 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 12:04:41,306 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 12:04:43,341 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 12:04:45,717 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 12:04:45,718 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 12:04:45,719 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 12:04:47,982 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 12:04:47,983 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 12:04:48,895 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 12:04:49,986 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 12:04:51,997 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 12:05:14,668 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 12:05:24,746 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 12:05:24,747 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 12:05:24,764 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 12:05:46,862 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-BACK TO PRODUCTS') failed for action 'click'. Attempting AI fallback.
+2025-11-19 12:05:56,918 | INFO | AILocatorFallback | AI fallback resolved 'back to products' to ('accessibility id', 'test-Menu') (score 0.68)
+2025-11-19 12:05:56,919 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Menu')
+2025-11-19 12:05:56,935 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Menu')
+2025-11-19 12:06:07,044 | INFO | utils.helpers | Scrolling to text containing 'Sauce Labs Bike Light'
+2025-11-19 12:06:18,342 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 12:06:18,546 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763582778342.png
+2025-11-19 12:06:18,779 | INFO | utils.driver_manager | Driver session quit successfully

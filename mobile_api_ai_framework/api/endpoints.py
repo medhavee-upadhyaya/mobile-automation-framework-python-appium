@@ -1,17 +1,20 @@
-"""Endpoint definitions for the mobile API client."""
+"""Endpoint definitions for the fake backend powering tests."""
 
 
-class EndpointRegistry:
-    """Container for service endpoint paths used by the API client."""
+class ApiEndpoints:
+    PRODUCTS = "products"
+    FEATURED = "featured"
+    BUNDLES = "bundles"
 
-    def __init__(self):
-        """Initialize the registry with default endpoint mappings."""
-        self._endpoints = {}
+    _PATHS = {
+        PRODUCTS: "/products",
+        FEATURED: "/featured",
+        BUNDLES: "/bundles",
+    }
 
-    def register(self, name: str, path: str) -> None:
-        """Register or overwrite an endpoint path under the provided name."""
-        self._endpoints[name] = path
+    @classmethod
+    def resolve(cls, name: str) -> str:
+        return cls._PATHS.get(name, "")
 
-    def resolve(self, name: str) -> str:
-        """Return the endpoint path for the given name."""
-        return self._endpoints.get(name, "")
+
+__all__ = ["ApiEndpoints"]

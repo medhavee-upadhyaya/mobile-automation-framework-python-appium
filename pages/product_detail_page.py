@@ -82,3 +82,33 @@ class ProductDetailPage(BasePage):
 
     def get_price(self) -> str:
         return self._get_text_from_locators(self.PRICE_LOCATORS)
+
+    def is_title_displayed(self, expected_text: str, timeout: int = 15) -> bool:
+        return self._is_text_present(expected_text, timeout)
+
+    def is_price_displayed(self, expected_price: str, timeout: int = 15) -> bool:
+        return self._is_text_present(expected_price, timeout)
+
+    def is_description_matching(self, snippet: str, timeout: int = 15) -> bool:
+        locator = self._text_contains_locator(snippet)
+        try:
+            self.wait_for(locator, timeout=timeout)
+            return True
+        except Exception:  # pylint: disable=broad-except
+            return False
+
+    def _is_text_present(self, text: str, timeout: int) -> bool:
+        locator = self._text_equals_locator(text)
+        try:
+            self.wait_for(locator, timeout=timeout)
+            return True
+        except Exception:  # pylint: disable=broad-except
+            return False
+
+    def _text_equals_locator(self, text: str):
+        escaped = text.replace('"', '\\"')
+        return (AppiumBy.ANDROID_UIAUTOMATOR, f'new UiSelector().text("{escaped}")')
+
+    def _text_contains_locator(self, snippet: str):
+        escaped = snippet.replace('"', '\\"')
+        return (AppiumBy.ANDROID_UIAUTOMATOR, f'new UiSelector().textContains("{escaped}")')
