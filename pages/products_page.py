@@ -4,7 +4,7 @@ from appium.webdriver.common.appiumby import AppiumBy
 from selenium.common.exceptions import NoSuchElementException
 
 from pages.base_page import BasePage
-from utils.helpers import scroll_to_text
+from utils.helpers import scroll_to_text, swipe
 
 
 class ProductsPage(BasePage):
@@ -48,13 +48,24 @@ class ProductsPage(BasePage):
         return (elements[0].text or "").strip()
 
     def open_product_by_name(self, product_name: str) -> None:
-        escaped = product_name.replace('"', '\\"')
-        locator = (
-            AppiumBy.ANDROID_UIAUTOMATOR,
-            f'new UiSelector().text("{escaped}")',
-        )
-        try:
-            element = self.driver.find_element(*locator)
-        except NoSuchElementException:
-            element = scroll_to_text(self.driver, product_name)
+        if self._tap_visible_product(product_name):
+            return
+
+        element = scroll_to_text(self.driver, product_name)
         element.click()
+
+    def _tap_visible_product(self, product_name: str) -> bool:
+        elements = self.driver.find_elements(*self.PRODUCT_TITLE)
+        for element in elements:
+            if (element.text or "").strip() == product_name:
+                element.click()
+                return True
+        # Attempt limited scrolls to find matching element
+        for _ in range(4):
+            swipe(self.driver, 500, 1600, 500, 600)
+            elements = self.driver.find_elements(*self.PRODUCT_TITLE)
+            for element in elements:
+                if (element.text or "").strip() == product_name:
+                    element.click()
+                    return True
+        return False

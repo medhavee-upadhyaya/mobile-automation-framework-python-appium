@@ -1886,3 +1886,372 @@ NoSuchElementError: An element could not be located on the page using the given 
 2025-11-19 12:06:18,342 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
 2025-11-19 12:06:18,546 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763582778342.png
 2025-11-19 12:06:18,779 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 12:11:35,806 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 12:11:35,808 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 12:11:38,348 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 12:11:38,349 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 12:11:39,299 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 12:11:40,435 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 12:11:42,395 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 12:11:44,754 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 12:11:44,755 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 12:11:44,756 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 12:11:47,167 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 12:11:47,169 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 12:11:47,988 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 12:11:49,129 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 12:11:51,093 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 12:12:13,774 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 12:12:23,854 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 12:12:23,854 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 12:12:23,872 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 12:12:23,987 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-BACK TO PRODUCTS')
+2025-11-19 12:12:34,937 | INFO | utils.helpers | Scrolling to text containing 'Sauce Labs Bike Light'
+2025-11-19 12:12:45,724 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 12:12:45,992 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763583165724.png
+2025-11-19 12:12:46,257 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 12:21:29,483 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 12:21:29,484 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 12:21:32,312 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 12:21:32,314 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 12:21:33,235 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 12:21:34,383 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 12:21:35,868 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 12:21:37,038 | INFO | utils.helpers | Tapping on element ('-android uiautomator', 'new UiSelector().text("Sauce Labs Backpack")')
+2025-11-19 12:21:58,643 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 12:22:08,733 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 12:22:08,734 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 12:22:08,753 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 12:22:09,909 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-BACK TO PRODUCTS')
+2025-11-19 12:22:30,553 | WARNING | ProductsPage | Primary locator ('-android uiautomator', 'new UiSelector().text("Sauce Labs Bike Light")') failed for action 'click'. Attempting AI fallback.
+2025-11-19 12:22:40,610 | ERROR | ProductsPage | AI fallback failed for action 'click' on locator ('-android uiautomator', 'new UiSelector().text("Sauce Labs Bike Light")'): Message: Element not found using ('-android uiautomator', 'new UiSelector().text("Sauce Labs Bike Light")') and AI fallback could not resolve locator for 'product Sauce Labs Bike Light'.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+
+2025-11-19 12:22:40,812 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/click_failure_1763583760612.png
+2025-11-19 12:23:01,375 | WARNING | ProductsPage | Primary locator ('-android uiautomator', 'new UiSelector().textContains("Sauce Labs Bike Light")') failed for action 'click'. Attempting AI fallback.
+2025-11-19 12:23:11,445 | ERROR | ProductsPage | AI fallback failed for action 'click' on locator ('-android uiautomator', 'new UiSelector().textContains("Sauce Labs Bike Light")'): Message: Element not found using ('-android uiautomator', 'new UiSelector().textContains("Sauce Labs Bike Light")') and AI fallback could not resolve locator for 'product Sauce Labs Bike Light'.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+
+2025-11-19 12:23:11,623 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/click_failure_1763583791446.png
+2025-11-19 12:23:11,624 | INFO | utils.helpers | Scrolling to text containing 'Sauce Labs Bike Light'
+2025-11-19 12:23:23,406 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 12:23:23,571 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763583803406.png
+2025-11-19 12:23:23,814 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 12:40:59,961 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 12:40:59,962 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 12:41:02,636 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 12:41:02,637 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 12:41:03,535 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 12:41:04,637 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 12:41:06,651 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 12:41:29,425 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 12:41:39,521 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 12:41:39,522 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 12:41:39,540 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 12:41:40,676 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-BACK TO PRODUCTS')
+2025-11-19 12:41:50,788 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 12:42:02,931 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 12:42:15,052 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 12:42:27,180 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 12:42:39,308 | INFO | utils.helpers | Scrolling to text containing 'Sauce Labs Bike Light'
+2025-11-19 12:42:51,613 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 12:42:51,934 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763584971614.png
+2025-11-19 12:42:52,495 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 12:51:14,384 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 12:51:14,385 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 12:51:17,091 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 12:51:17,092 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 12:51:18,012 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 12:51:19,102 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 12:51:21,129 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 12:51:43,827 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 12:51:53,935 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 12:51:53,936 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 12:51:53,953 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 12:51:54,067 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-BACK TO PRODUCTS')
+2025-11-19 12:52:05,021 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 12:52:17,150 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 12:52:29,275 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 12:52:41,402 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 12:52:53,537 | INFO | utils.helpers | Scrolling to text containing 'Sauce Labs Bike Light'
+2025-11-19 12:53:04,789 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 12:53:05,068 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763585584791.png
+2025-11-19 12:53:05,313 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 12:58:52,091 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 12:58:52,092 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 12:58:54,605 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 12:58:54,606 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 12:58:55,516 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 12:58:56,670 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 12:58:58,648 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 12:59:21,978 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 12:59:32,040 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 12:59:32,040 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 12:59:32,079 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 12:59:32,207 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-BACK TO PRODUCTS')
+2025-11-19 12:59:43,150 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 12:59:55,286 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:00:07,425 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:00:19,558 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:00:31,733 | INFO | utils.helpers | Scrolling to text containing 'Sauce Labs Bike Light'
+2025-11-19 13:00:43,359 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 13:00:43,704 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763586043360.png
+2025-11-19 13:00:43,903 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 13:32:48,530 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 13:32:48,531 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 13:32:51,421 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 13:32:51,422 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 13:32:52,261 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 13:32:53,412 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 13:32:55,363 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 13:33:18,121 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 13:33:28,202 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 13:33:28,202 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 13:33:28,222 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 13:33:28,352 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-BACK TO PRODUCTS')
+2025-11-19 13:33:39,373 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:33:51,498 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:34:04,108 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:34:16,231 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:34:28,360 | INFO | utils.helpers | Scrolling to text containing 'Sauce Labs Bike Light'
+2025-11-19 13:34:40,955 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 13:34:41,255 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763588080955.png
+2025-11-19 13:34:41,527 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 13:41:30,583 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 13:41:30,584 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 13:41:33,368 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 13:41:33,370 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 13:41:34,274 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 13:41:35,893 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 13:41:37,452 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 13:42:00,130 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 13:42:10,175 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 13:42:10,175 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 13:42:10,194 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 13:42:10,338 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-BACK TO PRODUCTS')
+2025-11-19 13:42:21,395 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:42:33,542 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:42:45,698 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:42:57,877 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:43:10,032 | INFO | utils.helpers | Scrolling to text containing 'Sauce Labs Bike Light'
+2025-11-19 13:43:21,971 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 13:43:22,242 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763588601974.png
+2025-11-19 13:43:22,544 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 13:49:32,194 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 13:49:32,195 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 13:49:34,811 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 13:49:34,812 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 13:49:35,727 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 13:49:36,845 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 13:49:38,846 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 13:50:01,650 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 13:50:11,731 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 13:50:11,731 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 13:50:11,748 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 13:50:11,910 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-BACK TO PRODUCTS')
+2025-11-19 13:50:22,908 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:50:35,036 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:50:47,160 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:50:59,293 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:51:11,424 | INFO | utils.helpers | Scrolling to text containing 'Sauce Labs Bike Light'
+2025-11-19 13:51:25,306 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 13:51:25,633 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763589085307.png
+2025-11-19 13:51:26,203 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 13:58:30,252 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 13:58:30,253 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 13:58:33,134 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 13:58:33,137 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 13:58:34,025 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 13:58:35,188 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 13:58:37,144 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 13:58:38,294 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:58:40,422 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:58:42,543 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:58:44,693 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:58:46,829 | INFO | utils.helpers | Scrolling to text containing 'Sauce'
+2025-11-19 13:59:08,446 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 13:59:18,520 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 13:59:18,521 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 13:59:18,538 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 13:59:18,770 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-BACK TO PRODUCTS')
+2025-11-19 13:59:29,723 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:59:41,851 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 13:59:53,988 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:00:06,113 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:00:18,252 | INFO | utils.helpers | Scrolling to text containing 'Sauce'
+2025-11-19 14:00:38,975 | ERROR | ProductDetailPage | Failed to find element on locator ('accessibility id', 'test-Item title'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/medha/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-11-19 14:00:39,261 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/find_element_failure_1763589638976.png
+2025-11-19 14:00:59,822 | ERROR | ProductDetailPage | Failed to find element on locator ('accessibility id', 'test-Item'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/medha/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-11-19 14:01:00,016 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/find_element_failure_1763589659823.png
+2025-11-19 14:01:20,582 | ERROR | ProductDetailPage | Failed to find element on locator ('-android uiautomator', 'new UiSelector().resourceId("test-Item title")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/medha/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-11-19 14:01:20,809 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/find_element_failure_1763589680582.png
+2025-11-19 14:01:41,378 | ERROR | ProductDetailPage | Failed to find element on locator ('accessibility id', 'test-Description'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/medha/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-11-19 14:01:41,619 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/find_element_failure_1763589701379.png
+2025-11-19 14:02:02,192 | ERROR | ProductDetailPage | Failed to find element on locator ('accessibility id', 'test-Item description'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/medha/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-11-19 14:02:02,387 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/find_element_failure_1763589722193.png
+2025-11-19 14:02:22,952 | ERROR | ProductDetailPage | Failed to find element on locator ('-android uiautomator', 'new UiSelector().descriptionContains("Description")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/medha/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-11-19 14:02:23,133 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/find_element_failure_1763589742952.png
+2025-11-19 14:02:23,138 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 14:02:23,266 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763589743138.png
+2025-11-19 14:02:23,893 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 14:18:55,970 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 14:18:55,970 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 14:18:58,890 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 14:18:58,893 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 14:18:59,790 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 14:19:00,935 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 14:19:03,218 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 14:19:26,442 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 14:19:36,528 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 14:19:36,529 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 14:19:36,561 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 14:19:36,806 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-BACK TO PRODUCTS')
+2025-11-19 14:19:47,812 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:19:59,966 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:20:12,099 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:20:24,240 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:20:36,394 | INFO | utils.helpers | Scrolling to text containing 'Sauce Labs Bike Light'
+2025-11-19 14:20:47,796 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 14:20:48,244 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763590847796.png
+2025-11-19 14:20:48,531 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 14:31:37,362 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 14:31:37,363 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 14:31:40,359 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 14:31:40,361 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 14:31:41,286 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 14:31:42,423 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 14:31:44,408 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 14:31:46,813 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 14:31:46,814 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 14:31:46,815 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 14:31:49,115 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 14:31:49,116 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 14:31:50,051 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 14:31:51,089 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 14:31:52,689 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 14:32:15,508 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 14:32:25,587 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 14:32:25,587 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 14:32:25,607 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 14:32:26,660 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-BACK TO PRODUCTS')
+2025-11-19 14:32:36,765 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:32:48,892 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:33:01,026 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:33:13,153 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:33:25,281 | INFO | utils.helpers | Scrolling to text containing 'Sauce Labs Bike Light'
+2025-11-19 14:33:35,338 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 14:33:35,555 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763591615339.png
+2025-11-19 14:33:36,105 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 14:35:49,757 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 14:35:49,758 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 14:35:52,241 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 14:35:52,242 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 14:35:53,154 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 14:35:54,279 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 14:35:56,276 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 14:35:57,457 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Item title')
+2025-11-19 14:36:19,095 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 14:36:29,172 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 14:36:29,173 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 14:36:29,191 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 14:36:30,323 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-CONTINUE SHOPPING')
+2025-11-19 14:36:31,106 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Item title')
+2025-11-19 14:36:52,675 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 14:37:02,743 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 14:37:02,744 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 14:37:02,768 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 14:37:03,872 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-CONTINUE SHOPPING')
+2025-11-19 14:37:05,010 | ERROR | ProductsPage | Failed to click on locator ('accessibility id', 'test-Cart'): Message: The element 'By.accessibilityId: test-Cart' is not linked to the same object in DOM anymore; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+io.appium.uiautomator2.common.exceptions.StaleElementReferenceException: The element 'By.accessibilityId: test-Cart' is not linked to the same object in DOM anymore
+	at io.appium.uiautomator2.model.ElementsCache.restore(ElementsCache.java:122)
+	at io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:153)
+	at io.appium.uiautomator2.handler.GetElementAttribute.safeHandle(GetElementAttribute.java:23)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:168)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:1119)
+
+2025-11-19 14:37:05,363 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/click_failure_1763591825010.png
+2025-11-19 14:37:05,365 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 14:37:05,628 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763591825365.png
+2025-11-19 14:37:05,841 | INFO | utils.driver_manager | Driver session quit successfully
+2025-11-19 14:39:44,490 | INFO | utils.driver_manager | Loading capabilities from /Users/medha/mobile_automation_framework/config/capabilities.json
+2025-11-19 14:39:44,491 | INFO | utils.driver_manager | Starting Appium session on http://127.0.0.1:4723
+2025-11-19 14:39:47,764 | INFO | utils.driver_manager | Driver started with implicit wait set to 10s
+2025-11-19 14:39:47,766 | INFO | LoginPage | Attempting login with username=standard_user
+2025-11-19 14:39:48,682 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Username')
+2025-11-19 14:39:49,787 | INFO | utils.helpers | Typing into element ('accessibility id', 'test-Password')
+2025-11-19 14:39:51,803 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-LOGIN')
+2025-11-19 14:40:14,471 | WARNING | ProductDetailPage | Primary locator ('accessibility id', 'test-ADD TO CART') failed for action 'click'. Attempting AI fallback.
+2025-11-19 14:40:24,555 | INFO | AILocatorFallback | AI fallback resolved 'product details add to cart' to ('accessibility id', 'test-Cart') (score 0.79)
+2025-11-19 14:40:24,555 | INFO | ProductDetailPage | Retrying action 'click' using fallback locator ('accessibility id', 'test-Cart')
+2025-11-19 14:40:24,574 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-Cart')
+2025-11-19 14:40:24,765 | INFO | utils.helpers | Tapping on element ('accessibility id', 'test-BACK TO PRODUCTS')
+2025-11-19 14:40:35,785 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:40:47,913 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:41:00,057 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:41:12,186 | INFO | utils.helpers | Swiping from (500,1600) to (500,600)
+2025-11-19 14:41:24,314 | INFO | utils.helpers | Scrolling to text containing 'Sauce Labs Bike Light'
+2025-11-19 14:41:35,547 | ERROR | tests.conftest | Test test_api_prepared_cart_bundle failed. Capturing screenshot.
+2025-11-19 14:41:35,793 | INFO | utils.helpers | Screenshot saved at /Users/medha/mobile_automation_framework/reports/screenshots/test_api_prepared_cart_bundle_1763592095548.png
+2025-11-19 14:41:36,369 | INFO | utils.driver_manager | Driver session quit successfully
