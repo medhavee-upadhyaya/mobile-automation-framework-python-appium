@@ -2,7 +2,7 @@
   "platformName": "Android",
   "appium:automationName": "UiAutomator2",
   "appium:deviceName": "Android Emulator",
-  "appium:platformVersion": "13",
+  "appium:platformVersion": "16",
   "appium:app": "app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk",
   "appium:appPackage": "com.swaglabsmobileapp",
   "appium:appActivity": "com.swaglabsmobileapp.MainActivity",
